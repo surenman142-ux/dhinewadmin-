@@ -53,32 +53,12 @@
         }
 
         .bank-name {
-            font-family: "Times New Roman", Times, serif;
             font-size: 26px;
-            font-weight: 900;
-            color: #000;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-        }
-
-        .logo-circle {
-            background-color: #ffeb3b;
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 4px solid #007a33;
-            margin-right: 15px;
-            box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        .logo-text-inner {
-            font-family: "Times New Roman", Times, serif;
-            font-size: 20px;
             font-weight: bold;
-            color: #000;
+            background: linear-gradient(to right, #007a33 60%, #ffeb3b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 0.5px;
         }
 
         .notice-title {
@@ -186,9 +166,8 @@
 
     <div class="card">
         <div class="header">
-            <div class="logo-circle">
-                <div class="logo-text-inner">KVB</div>
-            </div>
+            <!-- Referencing local icon from the project -->
+            <img src="img.jpeg" alt="KVB Logo" class="logo">
             <div class="bank-name">Karur Vysya Bank</div>
         </div>
 
